@@ -1,0 +1,187 @@
+{
+    "hello|hey|hii|hi": [
+      "Hello! How can I assist you today?",
+      "Hi there! Welcome to Shirpur Mahanagar Palika.",
+      "Namaste! How may I help you?",
+      "Greetings! How can we serve you today?",
+      "Hello! Feel free to ask any question.",
+      "Hi! What can I do for you?",
+      "Good day! How may I be of service?",
+      "Hello and welcome! Need any help?",
+      "Hi! I'm here to assist you.",
+      "Hey there! Let's get started."
+    ],
+    
+    "thanks|thanku|thank you": [
+      "You're most welcome!",
+      "Happy to help!",
+      "Glad I could assist you.",
+      "Anytime!",
+      "Always here to help!",
+      "You're welcome, have a great day!",
+      "Feel free to reach out again!",
+      "Thank you for reaching out!",
+      "No problem at all!",
+      "It was my pleasure helping you!"
+    ],
+  
+    "property tax": [
+      "You can pay your property tax online on our official website.",
+      "Visit the Property Tax section to pay dues.",
+      "Use your property number to check the tax amount.",
+      "Online payment is fast and easy through our portal.",
+      "You’ll get a receipt immediately after payment.",
+      "Property tax payments are open year-round.",
+      "You can also pay at our main office.",
+      "Tax discounts are available for early payments.",
+      "Contact our tax department for assistance.",
+      "All records are updated digitally for your convenience."
+    ],
+  
+    "water bill": [
+      "Water bills can be paid online via our website.",
+      "Check your bill using your consumer number.",
+      "Paying online is quick and secure.",
+      "You’ll get an e-receipt right after payment.",
+      "You can view past bills in the portal too.",
+      "SMS notifications are sent for every bill cycle.",
+      "You can set up auto-pay as well.",
+      "Late payments may include a small fine.",
+      "Customer service is available for any issue.",
+      "We aim to make water billing easy for all."
+    ],
+  
+    "birth certificate": [
+      "You can apply for a birth certificate online.",
+      "Visit the municipal health office for walk-in requests.",
+      "Online applications are processed within 7 days.",
+      "Make sure to upload all required documents.",
+      "A hospital-issued birth slip is required.",
+      "You’ll be notified via SMS when it's ready.",
+      "Certificates can be downloaded digitally.",
+      "Late registration is possible with an affidavit.",
+      "Printed copies can be collected from the office.",
+      "Contact our birth records department for help."
+    ],
+  
+    "death certificate": [
+      "Apply online for a death certificate easily.",
+      "Hospital record or doctor’s note is required.",
+      "You can apply at the health department in person.",
+      "Certificates are processed within 5 working days.",
+      "You will get a notification once it's ready.",
+      "A printed copy is available at the municipal office.",
+      "You can download the digital version too.",
+      "Multiple copies can be requested.",
+      "We offer support for late registrations.",
+      "Staff are available to guide you step-by-step."
+    ],
+  
+    "garbage collection": [
+      "Garbage is collected every morning in residential areas.",
+      "Use our app to know your collection schedule.",
+      "Collection happens six days a week.",
+      "Our workers follow a zone-based schedule.",
+      "Bins should be placed outside before 8 AM.",
+      "You can report missed pickups online.",
+      "We have special pickups for bulk waste.",
+      "Segregated waste is encouraged.",
+      "Cleanliness drives happen monthly.",
+      "We're committed to keeping the city clean!"
+    ],
+  
+    "complaint": [
+      "You can file a complaint online anytime.",
+      "Use the complaint section on our website.",
+      "Our mobile app also supports complaint logging.",
+      "You'll receive a ticket number instantly.",
+      "We respond to most issues within 24-48 hours.",
+      "Photos can be attached for clarity.",
+      "You can track your complaint status.",
+      "Helpline support is also available.",
+      "Feedback after resolution is appreciated.",
+      "Your voice helps us improve our services."
+    ],
+  
+    "building permission": [
+      "Submit your building plans online for approval.",
+      "Visit the Town Planning section of our website.",
+      "Approval usually takes 15-20 working days.",
+      "You’ll get updates via SMS and email.",
+      "All submissions are handled digitally.",
+      "Zoning and setbacks must be followed.",
+      "Our planning team is available for queries.",
+      "Document checklists are available online.",
+      "Meetings with engineers can be scheduled.",
+      "We’re here to guide you through the process."
+    ],
+  
+    "aadhar": [
+      "We don’t issue Aadhaar, but we’ll guide you.",
+      "Visit the nearest Aadhaar Seva Kendra.",
+      "Check UIDAI’s website for appointment booking.",
+      "We can direct you to the nearest center.",
+      "Aadhaar updates require ID proof and biometrics.",
+      "Online services are available on UIDAI portal.",
+      "Aadhaar is mandatory for many services.",
+      "Centers work Monday to Saturday, 10 AM–5 PM.",
+      "Support is available via 1947 (UIDAI helpline).",
+      "Let us know if you need more guidance."
+    ],
+  
+    "ration card": [
+      "Apply online through Maharashtra’s PDS portal.",
+      "Forms are also available at the rationing office.",
+      "Proof of residence and ID is required.",
+      "New cards take 2–3 weeks to process.",
+      "You can check status on the portal.",
+      "Corrections can be submitted online.",
+      "Duplicate cards are issued in case of loss.",
+      "Visit the local rationing officer for assistance.",
+      "Family head change is also supported.",
+      "We're here to help with the process."
+    ],
+  
+    "election card": [
+      "Visit https://voters.eci.gov.in to apply.",
+      "You can apply for new or updated voter ID.",
+      "Online correction is also supported.",
+      "We provide help at local election centers.",
+      "Track your application with your reference ID.",
+      "Booth-level officers can assist too.",
+      "Voter list verification is done regularly.",
+      "Election cards are delivered by post.",
+      "Digital voter ID (e-EPIC) is also available.",
+      "Voting is your right – apply today!"
+    ],
+  
+    "contact": [
+      "Call us at 02563-255343 for help.",
+      "Email us at info@shirpurpalika.org.",
+      "Visit our office near the bus stand.",
+      "Check the Contact Us page on our website.",
+      "Our helpline is active Monday to Saturday.",
+      "Social media links are also available.",
+      "Feel free to drop by during office hours.",
+      "We aim to respond within 24 hours.",
+      "You can also connect via WhatsApp soon.",
+      "Let us know how we can assist you."
+    ],
+  
+    "timing": [
+      "Office hours are 10 AM to 6 PM.",
+      "We’re open Monday to Saturday.",
+      "Closed on Sundays and public holidays.",
+      "Visit us during working hours.",
+      "Lunch break is from 1 PM to 2 PM.",
+      "Departments follow the same timing.",
+      "Emergency services are available 24/7.",
+      "Timings are mentioned on our website.",
+      "Please come early to avoid last-minute rush.",
+      "Appointments can be booked in advance."
+    ]
+  }
+
+
+
+
