@@ -1,0 +1,248 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduBot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="chat-icon" onclick="toggleChat()">
+    🤖
+  </div>
+
+  <div class="chat-container hidden" id="chat-container">
+    <div class="chat-header">🎓 EduBot - Your Virtual Guide</div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="input-box">
+      <input type="text" id="user-input" placeholder="Ask something...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleChat() {
+      const chat = document.getElementById('chat-container');
+      chat.classList.toggle('hidden');
+    }
+
+    function appendMessage(sender, message, isTyping = false) {
+      const box = document.getElementById('chat-box');
+      const msg = document.createElement('div');
+      msg.classList.add('chat-message', sender);
+
+      if (isTyping) {
+        msg.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+        msg.classList.add('typing');
+      } else {
+        msg.textContent = message;
+      }
+
+      box.appendChild(msg);
+      box.scrollTop = box.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const input = document.getElementById('user-input');
+      const message = input.value.trim();
+      if (!message) return;
+
+      appendMessage('user', message);
+      input.value = '';
+
+      const typingMsg = document.createElement('div');
+      appendMessage('bot', '', true);
+
+      const response = await fetch('/get', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ msg: message })
+      });
+
+      const data = await response.json();
+
+      const delay = Math.floor(Math.random() * 2000) + 1000;
+      setTimeout(() => {
+        const typing = document.querySelector('.typing');
+        if (typing) typing.remove();
+        appendMessage('bot', data.reply);
+      }, delay);
+    }
+  </script>
+</body>
+</html> -->
+
+
+<!-- ================================================================================================================================== -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduBot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="chat-icon" onclick="toggleChat()">
+    🤖
+  </div>
+
+  <div class="chat-container hidden" id="chat-container">
+    <div class="chat-header">🎓 EduBot - Your Virtual Guide</div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="input-box">
+      <input type="text" id="user-input" placeholder="Ask something...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleChat() {
+      const chat = document.getElementById('chat-container');
+      chat.classList.toggle('hidden');
+      if (!chat.classList.contains('hidden') && !chat.dataset.welcomed) {
+        // Show welcome message only once
+        setTimeout(() => {
+          appendMessage('bot', 'Hello, I am Krishna. How can I help you?');
+          chat.dataset.welcomed = true;
+        }, 500); // Slight delay to simulate typing
+      }
+    }
+
+    function appendMessage(sender, message, isTyping = false) {
+      const box = document.getElementById('chat-box');
+      const msg = document.createElement('div');
+      msg.classList.add('chat-message', sender);
+
+      if (isTyping) {
+        msg.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+        msg.classList.add('typing');
+      } else {
+        msg.textContent = message;
+      }
+
+      box.appendChild(msg);
+      box.scrollTop = box.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const input = document.getElementById('user-input');
+      const message = input.value.trim();
+      if (!message) return;
+
+      appendMessage('user', message);
+      input.value = '';
+
+      appendMessage('bot', '', true); // Show typing animation
+
+      const response = await fetch('/get', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ msg: message })
+      });
+
+      const data = await response.json();
+
+      const delay = Math.floor(Math.random() * 2000) + 1000;
+      setTimeout(() => {
+        const typing = document.querySelector('.typing');
+        if (typing) typing.remove();
+        appendMessage('bot', data.reply);
+      }, delay);
+    }
+  </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot - Kr$na</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="chat-icon" onclick="toggleChat()"> 🤦‍♂️</div>
+
+  <div class="chat-container hidden" id="chat-container">
+    <div class="chat-header">🎓 Ask me</div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="input-box">
+      <input type="text" id="user-input" placeholder="Ask something...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleChat() {
+      const chat = document.getElementById('chat-container');
+      chat.classList.toggle('hidden');
+      if (!chat.classList.contains('hidden') && !chat.dataset.welcomed) {
+        setTimeout(() => {
+          appendMessage('bot', 'Hello, I am John. How can I help you?');
+          chat.dataset.welcomed = true;
+        }, 500);
+      }
+    }
+
+    function appendMessage(sender, message, isTyping = false) {
+      const box = document.getElementById('chat-box');
+      const msgWrapper = document.createElement('div');
+      msgWrapper.classList.add('chat-message', sender);
+
+      const msgText = document.createElement('span');
+      if (isTyping) {
+        msgWrapper.classList.add('typing');
+        msgWrapper.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+      } else {
+        msgText.textContent = message;
+        msgWrapper.appendChild(msgText);
+
+        if (sender === 'user') {
+          const tick = document.createElement('span');
+          tick.className = 'tick';
+          tick.innerHTML = '✓'; // Initial single grey tick
+          msgWrapper.appendChild(tick);
+          msgWrapper.dataset.tick = 'sent';
+        }
+      }
+
+      box.appendChild(msgWrapper);
+      box.scrollTop = box.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const input = document.getElementById('user-input');
+      const message = input.value.trim();
+      if (!message) return;
+
+      appendMessage('user', message);
+      input.value = '';
+
+      appendMessage('bot', '', true); // Typing animation
+
+      const response = await fetch('/get', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ msg: message })
+      });
+
+      const data = await response.json();
+
+      const delay = Math.floor(Math.random() * 2000) + 1000;
+      setTimeout(() => {
+        const typing = document.querySelector('.typing');
+        if (typing) typing.remove();
+
+        appendMessage('bot', data.reply);
+
+        // Update last user message to ✓✓ blue
+        const userMessages = document.querySelectorAll('.chat-message.user');
+        const lastUserMsg = userMessages[userMessages.length - 1];
+        const tick = lastUserMsg.querySelector('.tick');
+        if (tick) {
+          tick.innerHTML = '✓✓';
+          tick.style.color = '#34B7F1';
+        }
+      }, delay);
+    }
+  </script>
+</body>
+</html>
